@@ -17,7 +17,7 @@ Color Declaration
   --clr-body-heading: #1B2A52;
   --clr-body-text: #6A738B;
   --clr-color-violet: #E825EC;
-  --clr-theme-primary: #7D25EC;
+  --clr-theme-primary: #F15342;
   --clr-bg-gray: #F6F6F6;
   --clr-bg-gray-2: #F1F1F1;
   --clr-bg-gray-3: #EEEEEE;
@@ -202,6 +202,8 @@ body {
   color: var(--clr-body-text);
   font-size: 16px;
   line-height: 26px;
+  background: rgb(255,251,246);
+  background: linear-gradient(0deg, rgba(255,251,246,1) 0%, rgba(245,226,206,1) 100%);
 }
 
 .img, img {
@@ -2152,8 +2154,7 @@ Header CSS 01 Start
   z-index: 99;
 }
 .header-top {
-  background: linear-gradient(90deg, #EB42FA 0%, #7720FF 100%);
-  background: linear-gradient(90deg, #7720FF 0%, #EB42FA 100%);
+  background-image: linear-gradient(to right bottom, #f15342, #f66837, #f97d2b, #f8921f, #f5a614, #e2b420, #cfc033, #bdca4a, #a1cc6c, #8fca8a, #8ac6a1, #93bfb0);
   height: 40px;
   display: flex;
   align-items: center;
@@ -2317,13 +2318,13 @@ Header CSS 01 Start
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background: linear-gradient(180deg, #9B1EFE 0%, #6917D0 100%);
+  background-image: linear-gradient(to right bottom, #f15342, #f66837, #f97d2b, #f8921f, #f5a614, #e2b420, #cfc033, #bdca4a, #a1cc6c, #8fca8a, #8ac6a1, #93bfb0);
   display: block;
   padding: 0 30px;
 }
 .header-action-btn:hover {
   color: #fff;
-  background: linear-gradient(180deg, #7D25EC 0%, #9425EC 100%);
+  background-image: linear-gradient(to left bottom, #f15342, #f66837, #f97d2b, #f8921f, #f5a614, #e2b420, #cfc033, #bdca4a, #a1cc6c, #8fca8a, #8ac6a1, #93bfb0);
 }
 
 /* ///////////////////////////////////////////////////////////
@@ -3074,7 +3075,7 @@ Header CSS 01 Start
 .h5_header-nav-menu ul li:hover > a {
   color: var(--clr-theme-primary);
   border-radius: 4px;
-  background: rgba(125, 37, 236, 0.1);
+  background: rgb(255 0 0 / 6%);
   box-shadow: 0px 1px 2px 0px rgba(27, 42, 82, 0.2);
 }
 .h5_header-action {
@@ -3154,7 +3155,7 @@ Header CSS 01 Start
 /////////////////////////////////////////////////////////// */
 .theme-btn {
   border-radius: 50px;
-  background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
+  background-image: linear-gradient(to right bottom, #f15342, #f66837, #f97d2b, #f8921f, #f5a614, #e2b420, #cfc033, #bdca4a, #a1cc6c, #8fca8a, #8ac6a1, #93bfb0);
   color: #FFF;
   font-size: 14px;
   font-weight: 600;
@@ -3169,7 +3170,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .theme-btn:hover {
-  background: linear-gradient(180deg, #7D25EC 0%, #9425EC 100%);
+  background-image: linear-gradient(to left bottom, #f15342, #f66837, #f97d2b, #f8921f, #f5a614, #e2b420, #cfc033, #bdca4a, #a1cc6c, #8fca8a, #8ac6a1, #93bfb0);
   color: #fff;
 }
 
@@ -3198,7 +3199,8 @@ Header CSS 01 Start
 04. banner
 /////////////////////////////////////////////////////////// */
 .banner-area {
-  background: #F2F8FD;
+  /* background: #f9f8f4; */
+  background: #f9f8f4;
   position: relative;
   z-index: 1;
 }
@@ -3244,10 +3246,10 @@ Header CSS 01 Start
 }
 .banner-content-subtitle {
   border-radius: 50px;
-  background: rgba(125, 37, 236, 0.1);
+  background: rgb(255 0 0 / 6%);
   box-shadow: 0px 2px 4px 0px rgba(27, 42, 82, 0.2);
   display: inline-block;
-  color: #7D25EC;
+  color: #F15342;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -3440,7 +3442,7 @@ Header CSS 01 Start
   }
 }
 .h2_banner-content-subtitle {
-  color: #7D25EC;
+  color: #F15342;
   font-size: 18px;
   font-weight: 400;
   display: block;
@@ -3703,7 +3705,7 @@ Header CSS 01 Start
   }
 }
 .h3_banner-content-subtitle {
-  color: #7D25EC;
+  color: #F15342;
   display: block;
   font-size: 16px;
   font-weight: 500;
@@ -3813,7 +3815,7 @@ Header CSS 01 Start
   width: 100%;
   height: 100%;
   content: "";
-  background: linear-gradient(180deg, #F2F8FD 0%, rgba(242, 248, 253, 0.2) 17.75%, rgba(255, 255, 255, 0) 76.89%, #F2F8FD 100%);
+  background: linear-gradient(180deg, #f9f8f4 0%, rgba(242, 248, 253, 0.2) 17.75%, rgba(255, 255, 255, 0) 76.89%, #f9f8f4 100%);
   z-index: 9;
 }
 .h3_banner-shape-1 {
@@ -4569,7 +4571,7 @@ Header CSS 01 Start
 /////////////////////////////////////////////////////////// */
 .section-subtitle {
   border-radius: 50px;
-  background: rgba(125, 37, 236, 0.06);
+  background: rgb(255 0 0 / 6%);
   box-shadow: 0px 2px 4px 0px rgba(27, 42, 82, 0.2);
   display: inline-block;
   color: var(--clr-theme-primary);
@@ -4623,7 +4625,7 @@ Header CSS 01 Start
 }
 
 .h2_section-subtitle {
-  color: #7D25EC;
+  color: #F15342;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4727,7 +4729,7 @@ Header CSS 01 Start
 }
 
 .inner_section-subtitle {
-  color: #7D25EC;
+  color: #F15342;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4829,7 +4831,7 @@ Header CSS 01 Start
   position: absolute;
   right: 45px;
   top: 44px;
-  color: rgba(125, 37, 236, 0.06);
+  color: rgb(255 0 0 / 6%);
   font-size: 40px;
   font-weight: 700;
   line-height: 1;
@@ -5430,14 +5432,14 @@ Header CSS 01 Start
   border: 1px solid #7D25EC;
   height: 44px;
   padding: 0 30px;
-  color: #7D25EC;
+  color: #F15342;
   font-size: 14px;
   font-weight: 600;
   display: flex;
   align-items: center;
 }
 .h3_work-top-btn a:hover {
-  background-color: #7D25EC;
+  background-color: #F15342;
   color: #fff;
 }
 
@@ -5552,7 +5554,7 @@ Header CSS 01 Start
   width: 105px;
 }
 .inner_work-item-number h3 {
-  color: #7D25EC;
+  color: #F15342;
   font-size: 36px;
   font-weight: 500;
   line-height: 1.44;
@@ -5571,7 +5573,8 @@ Header CSS 01 Start
 10. apps
 /////////////////////////////////////////////////////////// */
 .apps-area {
-  background: #F2F8FD;
+  /* background: #f9f8f4; */
+  background: #f9f8f4;
   position: relative;
   z-index: 1;
 }
@@ -5659,7 +5662,8 @@ Header CSS 01 Start
 /////////////////////////////////////////////////////////// */
 .price-item {
   border-radius: 14px;
-  background: #F2F8FD;
+  /* background: #f9f8f4; */
+  background: #f9f8f4;
   padding: 0 34px 42px;
   margin-bottom: 30px;
 }
@@ -5680,7 +5684,7 @@ Header CSS 01 Start
   text-transform: uppercase;
   display: inline-block;
   border-radius: 0px 0px 8px 8px;
-  background: #7D25EC;
+  background: #F15342;
   padding: 0 12px;
   height: 24px;
   line-height: 24px;
@@ -5758,14 +5762,14 @@ Header CSS 01 Start
   margin-bottom: 15px;
 }
 .price-item-offer {
-  color: #7D25EC;
+  color: #F15342;
   text-align: center;
   font-size: 13px;
   font-weight: 500;
   line-height: 22px;
   letter-spacing: -0.39px;
   display: inline-block;
-  background: rgba(125, 37, 236, 0.1);
+  background: rgb(255 0 0 / 6%);
   height: 22px;
   padding: 0 20px;
   margin-bottom: 35px;
@@ -5778,7 +5782,7 @@ Header CSS 01 Start
   top: 50%;
   transform: translateY(-50%);
   content: "";
-  background-color: #F2F8FD;
+  background-color: #f9f8f4;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -5789,7 +5793,7 @@ Header CSS 01 Start
   top: 50%;
   transform: translateY(-50%);
   content: "";
-  background-color: #F2F8FD;
+  background-color: #f9f8f4;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -5858,7 +5862,7 @@ Header CSS 01 Start
 }
 .price-item.active {
   border-radius: 14px;
-  border: 1.5px solid #7D25EC;
+  border: 1.5px solid #F15342;
   background: #FFF;
   box-shadow: 0px 10px 30px 0px rgba(27, 42, 82, 0.07);
 }
@@ -6023,7 +6027,7 @@ Header CSS 01 Start
 }
 
 .h3_price-area {
-  background: #F2F8FD;
+  background: #f9f8f4;
 }
 .h3_price-area .price-item {
   border-radius: 10px;
@@ -6094,7 +6098,7 @@ Header CSS 01 Start
 12. testimonial
 /////////////////////////////////////////////////////////// */
 .testimonial-area {
-  background: linear-gradient(180deg, rgba(242, 248, 253, 0) 0%, #F2F8FD 100%);
+  background: linear-gradient(180deg, rgba(242, 248, 253, 0) 0%, #f9f8f4 100%);
 }
 .testimonial-item {
   border-radius: 10px;
@@ -6284,7 +6288,7 @@ Header CSS 01 Start
 }
 
 .h3_testimonial-area {
-  background: #F2F8FD;
+  background: #f9f8f4;
 }
 .h3_testimonial-item {
   border-radius: 10px;
@@ -6566,7 +6570,7 @@ Header CSS 01 Start
 }
 .blog-content-meta a {
   border-radius: 40px;
-  background: #7D25EC;
+  background: #F15342;
   display: block;
   color: #fff;
   font-size: 13px;
@@ -6636,7 +6640,7 @@ Header CSS 01 Start
   z-index: 1;
 }
 .h2_blog-content-meta span a {
-  color: #7D25EC;
+  color: #F15342;
   text-transform: uppercase;
 }
 .h2_blog-content-meta span i {
@@ -6672,7 +6676,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .h2_blog-content-title:hover a {
-  color: #7D25EC;
+  color: #F15342;
 }
 
 .h2_blog-active.swiper .h2_blog-pagination span.swiper-pagination-bullet {
@@ -6698,7 +6702,7 @@ Header CSS 01 Start
 }
 
 .h3_blog-area {
-  background: #F2F8FD;
+  background: #f9f8f4;
 }
 .h3_blog-item {
   border-radius: 10px;
@@ -6745,7 +6749,7 @@ Header CSS 01 Start
   text-transform: uppercase;
 }
 .h3_blog-date b {
-  color: #7D25EC;
+  color: #F15342;
   text-align: center;
   font-size: 26px;
   font-weight: 700;
@@ -6898,7 +6902,7 @@ Header CSS 01 Start
   gap: 8px;
 }
 .blog_details-meta span:first-child {
-  color: #7D25EC;
+  color: #F15342;
   text-transform: uppercase;
 }
 .blog_details-meta span:not(:last-child) {
@@ -7011,7 +7015,7 @@ Header CSS 01 Start
 }
 .blog_details-content blockquote span {
   display: block;
-  color: #7D25EC;
+  color: #F15342;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -7274,7 +7278,7 @@ Header CSS 01 Start
   width: 100px;
   height: 1px;
   content: "";
-  background-color: #7D25EC;
+  background-color: #F15342;
 }
 .blog_details-widget-search {
   position: relative;
@@ -7427,7 +7431,7 @@ Header CSS 01 Start
 }
 
 .h3_brand-area {
-  background: #F2F8FD;
+  background: #f9f8f4;
 }
 .h3_brand-wrap {
   display: flex;
@@ -7593,7 +7597,7 @@ Header CSS 01 Start
 }
 .h2_faq-content .accordion-button:not(.collapsed)::before {
   border-color: transparent;
-  background-color: #F2F8FD;
+  background-color: #f9f8f4;
   color: var(--clr-theme-primary);
   content: "\f106";
   line-height: 29px;
@@ -7633,7 +7637,7 @@ Header CSS 01 Start
 }
 
 .h3_faq-area {
-  background: #F2F8FD;
+  background: #f9f8f4;
 }
 .h3_faq-content .accordion-item {
   overflow: hidden;
@@ -7850,7 +7854,7 @@ Header CSS 01 Start
 17. service
 /////////////////////////////////////////////////////////// */
 .h3_service-area {
-  background: #F2F8FD;
+  background: #f9f8f4;
 }
 .h3_service-item {
   background: #fff;
@@ -8185,7 +8189,7 @@ Header CSS 01 Start
 }
 
 .h3_instagram-area {
-  background: #F2F8FD;
+  background: #f9f8f4;
 }
 .h3_instagram-wrap {
   display: flex;
@@ -8833,7 +8837,7 @@ Header CSS 01 Start
   font-weight: 500;
 }
 .shop_details-action-2 a:hover {
-  color: #7D25EC;
+  color: #F15342;
 }
 .shop_details-action-2 a i {
   font-size: 16px;
@@ -8874,7 +8878,7 @@ Header CSS 01 Start
   border-radius: 8px;
   overflow: hidden;
   border: none;
-  background: #F2F8FD;
+  background: #f9f8f4;
   width: max-content;
   padding: 0 10px;
   margin-bottom: 33px;
@@ -8884,7 +8888,7 @@ Header CSS 01 Start
 }
 .shop_details-tab .nav .nav-item .nav-link {
   border: none;
-  background: #F2F8FD;
+  background: #f9f8f4;
   padding: 0 30px;
   height: 50px;
   line-height: 50px;
@@ -9349,7 +9353,7 @@ Header CSS 01 Start
   border-radius: 50%;
 }
 .breadcrumb-list span {
-  color: #7D25EC;
+  color: #F15342;
   font-size: 17px;
   font-weight: 500;
   line-height: 25px;
@@ -9678,7 +9682,7 @@ Header CSS 01 Start
   padding: 35px 30px 35px;
 }
 .inner_portfolio-content-tag {
-  color: #7D25EC;
+  color: #F15342;
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
@@ -9908,7 +9912,7 @@ Header CSS 01 Start
   }
 }
 .login-content-subtitle {
-  color: #7D25EC;
+  color: #F15342;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -9938,7 +9942,7 @@ Header CSS 01 Start
   margin-bottom: 0;
 }
 .login-content-link p a {
-  color: #7D25EC;
+  color: #F15342;
 }
 .login-content-account {
   display: flex;
@@ -10044,7 +10048,7 @@ Header CSS 01 Start
   }
 }
 .login-condition a {
-  color: #7D25EC;
+  color: #F15342;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -10134,7 +10138,7 @@ Header CSS 01 Start
 .contact-icon {
   width: 70px;
   height: 70px;
-  background: #F2F8FD;
+  background: #f9f8f4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10417,7 +10421,7 @@ Header CSS 01 Start
   margin-bottom: 0;
 }
 .checkout-top-item.last-item span {
-  background: #F2F8FD;
+  background: #f9f8f4;
   color: #6A738B;
 }
 .checkout-top-item.last-item p {
@@ -10524,7 +10528,7 @@ Header CSS 01 Start
   margin-bottom: 35px;
 }
 .checkout-payment-text p a {
-  color: #7D25EC;
+  color: #F15342;
   text-decoration: underline;
   display: inline-block;
 }
@@ -11250,7 +11254,7 @@ Header CSS 01 Start
 }
 
 .h3_footer-area {
-  background: #F2F8FD;
+  background: #f9f8f4;
 }
 .h3_footer-top {
   padding-bottom: 30px;
@@ -11483,7 +11487,7 @@ Header CSS 01 Start
 }
 .h5_footer-top {
   border-radius: 0px 0px 30px 30px;
-  background: #F2F8FD;
+  background: #f9f8f4;
 }
 .h5_footer-logo {
   width: 135px;
