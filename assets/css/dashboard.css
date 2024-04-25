@@ -1232,3 +1232,23 @@ p {
 .back-clr{
     background-color: #d9e1e3;
 }
+
+
+/* ---------------------------------------------------
+    INTEGRATION LIST CSS
+----------------------------------------------------- */
+
+.integration-col-style {
+    display: flex;
+    border: 1px solid #edeff1;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 17px;
+    margin-bottom: 1rem;
+}
+
+.integration-col-style > div {
+    display: flex; /* Display children as flex items */
+    align-items: center; /* Align children vertically */
+}
