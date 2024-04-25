@@ -7305,7 +7305,7 @@ Header CSS 01 Start
   height: 47px;
   border: none;
   border-radius: 10px;
-  background: #7D25EC;
+  background: #F15342;
   color: #fff;
   font-size: 15px;
   display: flex;
@@ -7363,7 +7363,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 8px;
-  background: #7D25EC;
+  background: #F15342;
   height: 46px;
   display: flex;
   align-items: center;
@@ -10004,7 +10004,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 10px;
-  background: #7D25EC;
+  background: #F15342;
   height: 46px;
   line-height: 46px;
   color: #fff;
@@ -11523,7 +11523,7 @@ Header CSS 01 Start
   font-size: 14px;
 }
 .h5_footer-widget-social a:hover {
-  background: #7D25EC;
+  background-image: linear-gradient(to left bottom, #f15342, #f66837, #f97d2b, #f8921f, #f5a614, #e2b420, #cfc033, #bdca4a, #a1cc6c, #8fca8a, #8ac6a1, #93bfb0);
   color: #fff;
   border-color: transparent;
 }
@@ -11579,7 +11579,7 @@ Header CSS 01 Start
   top: 50%;
   transform: translateY(-50%);
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
+  background-image: linear-gradient(to right bottom, #f15342, #f66837, #f97d2b, #f8921f, #f5a614, #e2b420, #cfc033, #bdca4a, #a1cc6c, #8fca8a, #8ac6a1, #93bfb0);
   height: 44px;
   border: none;
   padding: 0 32px;
@@ -11593,7 +11593,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .h5_footer-widget form button:hover {
-  background: linear-gradient(180deg, #e20de6 0%, #E825EC 100%);
+  background-image: linear-gradient(to left bottom, #f15342, #f66837, #f97d2b, #f8921f, #f5a614, #e2b420, #cfc033, #bdca4a, #a1cc6c, #8fca8a, #8ac6a1, #93bfb0);
 }
 @media (max-width: 480px) {
   .h5_footer-widget form button {
