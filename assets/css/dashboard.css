@@ -435,8 +435,8 @@ p {
     flex-grow: 1;
     flex-direction: column;
     row-gap: 20px;
-    border-color: rgb(228, 228, 231);
-    background-color: rgb(255, 255, 255);
+    /* border-color: rgb(228, 228, 231); */
+    /* background-color: rgb(255, 255, 255); */
     display: flex;
 }
 
@@ -445,8 +445,8 @@ p {
     box-sizing: border-box;
     flex-grow: 1;
     row-gap: 20px;
-    border-color: rgb(228, 228, 231);
-    background-color: rgb(255, 255, 255);
+    /* border-color: rgb(228, 228, 231);
+    background-color: rgb(255, 255, 255); */
     display: flex;
 
 }
@@ -466,7 +466,7 @@ p {
 .div-con-inner-2 {
     margin: 0;
     padding: 15px;
-    background-color: #d9e1e3;
+    /* background-color: #d9e1e3; */
 }
 
 .custom-style-129 {
@@ -1282,7 +1282,9 @@ p {
 }
 
 .active {
-    background-color: lightblue;
+    background-color: #b9d8cc;
+    border-radius: 5px;
+    padding: 5px
 }
 
 .back-clr{
