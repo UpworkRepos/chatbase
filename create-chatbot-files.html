@@ -152,19 +152,19 @@
                 <section class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <ul class="nav justify-content-center mt-4 p-0 mb-0">
+                            <ul class="nav mt-4 p-0 mb-0">
                                 <li class="nav-item">
-                                <a class="nav-link text-decoration-none" href="chatbot.html">Chatbot</a>
+                                    <a class="nav-link active text-decoration-none font-weight-bold" href="sources.html">Sources</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link text-decoration-none" href="settings.html">Settings</a>
+                                    <a class="nav-link text-decoration-none" href="chatbot.html">Chatbot</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link text-decoration-none" href="#">Dashboard</a>
+                                    <a class="nav-link text-decoration-none" href="settings.html">Settings</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link active text-decoration-none font-weight-bold" href="sources.html">Sources</a>
-                                </li>
+                                    <a class="nav-link text-decoration-none" href="#">Dashboard</a>
+                                </li>                                
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none" href="integration.html">Integrations</a>
                                 </li>
@@ -213,9 +213,14 @@
                                     <div class="col-10 pl-0">
                                         <div class="col-12 right-side-top px-5 py-4">
                                             <div class="row">
-                                                <div class="col-8">
-                                                    <div class="col-3 py-3 mt-2 search-bar-top">
-                                                        <i class="fas fa-search"></i><input type="text" placeholder="Search" />
+                                                <div class="col-8 chatboat-searchbar">
+                                                    <div class="input-group">
+                                                        <button type="button" class="btn search-btn" data-mdb-ripple-init>
+                                                          <i class="fas fa-search"></i>
+                                                        </button>
+                                                        <div class="form-outline" data-mdb-input-init>
+                                                            <input type="search" id="form1" class="form-control" placeholder="Search" />
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-4 text-end">
@@ -225,10 +230,10 @@
                                         </div>
         
                                         <div class="col-12 p-5">
-                                            <table>
+                                            <table class="table">
                                                 <thead>
                                                     <tr>
-                                                        <th width="250"><input type="checkbox"/>Name</th>
+                                                        <th width="450"><input type="checkbox" class="mx-2"/>Name</th>
                                                         <th>Last update</th>
                                                         <th>Size</th>
                                                         <th>Status</th>
