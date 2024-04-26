@@ -1286,3 +1286,7 @@ li.nav-item.d-flex.align-items-center.selected-setting-item {
     line-height: 1.5;
     color: #918e8e;
 }
+
+input#flexSwitchCheckDefault {
+    margin-left: -18px;
+}
