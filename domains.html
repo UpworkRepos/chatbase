@@ -77,19 +77,19 @@
                 <section class="container">
                     <ul class="nav justify-content-center mt-4 p-0 mb-0">
                         <li class="nav-item">
-                            <a class="nav-link  text-decoration-none " href="#">Chatbot</a>
+                            <a class="nav-link  text-decoration-none " href="chatbot.html">Chatbot</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-decoration-none  font-weight-bold" href="#">Settings</a>
+                            <a class="nav-link active text-decoration-none  font-weight-bold" href="settings.html">Settings</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-decoration-none" href="#">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-decoration-none" href="#">Sources</a>
+                            <a class="nav-link text-decoration-none" href="sources.html">Sources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  text-decoration-none" href="#">Integrations</a>
+                            <a class="nav-link  text-decoration-none" href="integration.html">Integrations</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-decoration-none" data-toggle="modal" data-target="#embedChatbot"
@@ -142,7 +142,7 @@
                                             <span class="ms-1 d-none d-sm-inline align-middle">Leads</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item d-flex align-items-center selected-setting-item">
+                                    <li class="nav-item d-flex align-items-center">
                                         <a href="notifications.html" class="nav-link px-0 ml-2">
                                             <i class="fs-4 bi-bell align-middle"></i>
                                             <span class="ms-1 d-none d-sm-inline align-middle">Notifications</span>
@@ -154,7 +154,7 @@
                                             <span class="ms-1 d-none d-sm-inline align-middle">Webhooks</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item d-flex align-items-center">
+                                    <li class="nav-item d-flex align-items-center selected-setting-item">
                                         <a href="domains.html" class="nav-link px-0 ml-2">
                                             <i class="fs-4  bi-globe align-middle"></i>
                                             <span class="ms-1 d-none d-sm-inline align-middle">Domains</span>
@@ -163,30 +163,28 @@
                                 </ul>
                             </div>
                             <div class="col-md-7 right-side-menu">
-                                <p class="h4 fon-weight-bold">Notifications</p>
+                                <p class="h4 fon-weight-bold">Domains</p>
                                 <hr style="border-color: #cacaca;" />
+                                
                                 <!-- Button -->
-                                <div class="centered-button d-flex justify-content-center align-items-center flex-column">
+                                <!-- <div class="centered-button d-flex justify-content-center align-items-center flex-column">
                                     <p class="font-weight-bold">Notifications are available for subscribed users only
                                     </p>
                                     <button type="button" class="btn btn-primary">Upgrade Now</button>
-                                </div>
+                                </div> -->
 
                                 <!-- Blurred Div -->
                                 <div class="blur-container">
                                     <div class="blur-content">
                                         <div class="mt-2">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <p>Receive email with daily leads</p>
+                                            <p>Use your own custom domains for the embed script, iframe, and chatbot link.</p>
+                                            <form class="form-inline">
+                                                <div class="form-group mx-sm-3 mb-2">
+                                                  <input type="password" class="form-control" id="inputPassword2" placeholder="chat.mywebsite.com">
                                                 </div>
-                                                <div class="col-sm-6 text-right">
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input toggle-switch" type="checkbox"
-                                                            role="switch" id="phoneSwitch">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+                                              </form>
+                                              
                                         </div>
                                         <div class="mt-2">
                                             <div class="row">

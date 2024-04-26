@@ -245,10 +245,14 @@ a{
 }
 
 a.nav-link.active.text-decoration-none.font-weight-bold {
-    border-bottom: 3px solid #b699f9;
-    border-radius: 1px;
+    background: #b9d8cc;
+    border-radius: 5px;
 }
-
+ul.nav.justify-content-center.mt-4.p-0.mb-0 {
+    border: 1px solid #cacaca;
+    padding: 0.7rem !important;
+    border-radius: 12px;
+}
 .w-65{
     width: 65% !important;
 }
@@ -431,8 +435,8 @@ p {
     flex-grow: 1;
     flex-direction: column;
     row-gap: 20px;
-    border-color: rgb(228, 228, 231);
-    background-color: rgb(255, 255, 255);
+    /* border-color: rgb(228, 228, 231); */
+    /* background-color: rgb(255, 255, 255); */
     display: flex;
 }
 
@@ -441,8 +445,8 @@ p {
     box-sizing: border-box;
     flex-grow: 1;
     row-gap: 20px;
-    border-color: rgb(228, 228, 231);
-    background-color: rgb(255, 255, 255);
+    /* border-color: rgb(228, 228, 231);
+    background-color: rgb(255, 255, 255); */
     display: flex;
 
 }
@@ -462,7 +466,7 @@ p {
 .div-con-inner-2 {
     margin: 0;
     padding: 15px;
-    background-color: #d9e1e3;
+    /* background-color: #d9e1e3; */
 }
 
 .custom-style-129 {
@@ -1278,7 +1282,9 @@ p {
 }
 
 .active {
-    background-color: lightblue;
+    background-color: #b9d8cc;
+    border-radius: 5px;
+    padding: 5px
 }
 
 .back-clr{
@@ -1289,6 +1295,8 @@ p {
 /* ---------------------------------------------------
     INTEGRATION LIST CSS
 ----------------------------------------------------- */
+
+
 
 .integration-col-style {
     display: flex;
@@ -1343,6 +1351,23 @@ input#flexSwitchCheckDefault {
     margin-left: -18px;
 }
 
+.blur-container {
+    position: relative;
+    overflow: hidden; /* Ensure blurred content doesn't overflow */
+}
+
+.blur-content {
+    filter: blur(3px);
+}
+
+.centered-button {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    right: 6%;
+    z-index: 1;
+    /* transform: translate(-50%, -50%); */
+}
 .dashboard-cards .card{
     height: 250px;
     border-radius: 8px;
