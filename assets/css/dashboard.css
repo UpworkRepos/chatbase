@@ -1290,3 +1290,21 @@ li.nav-item.d-flex.align-items-center.selected-setting-item {
 input#flexSwitchCheckDefault {
     margin-left: -18px;
 }
+
+.blur-container {
+    position: relative;
+    overflow: hidden; /* Ensure blurred content doesn't overflow */
+}
+
+.blur-content {
+    filter: blur(3px);
+}
+
+.centered-button {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    right: 6%;
+    z-index: 1;
+    /* transform: translate(-50%, -50%); */
+}
