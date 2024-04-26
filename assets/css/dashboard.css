@@ -193,10 +193,14 @@ a{
 }
 
 a.nav-link.active.text-decoration-none.font-weight-bold {
-    border-bottom: 3px solid #b699f9;
-    border-radius: 1px;
+    background: #b9d8cc;
+    border-radius: 5px;
 }
-
+ul.nav.justify-content-center.mt-4.p-0.mb-0 {
+    border: 1px solid #cacaca;
+    padding: 0.7rem !important;
+    border-radius: 12px;
+}
 .w-65{
     width: 65% !important;
 }
@@ -1237,6 +1241,8 @@ p {
 /* ---------------------------------------------------
     INTEGRATION LIST CSS
 ----------------------------------------------------- */
+
+
 
 .integration-col-style {
     display: flex;
