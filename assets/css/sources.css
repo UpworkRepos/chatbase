@@ -6,3 +6,26 @@
 body{
     background-color: white;
 }
+
+button.btn.btn-light.cancel-btn-style {
+    padding: 1rem 2rem;
+    border: 1px solid #dfdfdf;
+    font-size: 14px;
+}
+button.btn.btn-primary.submit-btn-style {
+    padding: 1rem 2rem;
+    font-size: 14px;
+    margin-left: 2rem;
+}
+
+.input-section-third {
+    display: flex;
+}
+
+.input-80 {
+    width: 70%;
+}
+
+.button-20 {
+    width: 30%;
+}
