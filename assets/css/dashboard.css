@@ -1303,3 +1303,41 @@ p {
     display: flex; /* Display children as flex items */
     align-items: center; /* Align children vertically */
 }
+
+.img-height{
+    height:2.3rem
+}
+.blocked-div{
+    cursor: not-allowed;
+}
+
+
+/* ---------------------------------------------------
+    SETTIGS PAGE CSS
+----------------------------------------------------- */
+
+.col-md-7.right-side-menu{
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.col-md-4.left-side-menu {
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+}
+li.nav-item.d-flex.align-items-center.selected-setting-item {
+    width: 100%;
+    background: #b9d8cc;
+    border-radius: 3px;
+}
+
+.settings-label-style{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #918e8e;
+}
+
+input#flexSwitchCheckDefault {
+    margin-left: -18px;
+}
