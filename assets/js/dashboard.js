@@ -24,3 +24,15 @@ $(document).ready(function(){
         $(this).html('<span class="material-symbols-outlined">done</span>');
     });
 });
+
+
+// Model.html jquery code : 
+$(document).ready(function() {
+    $("#customRange1").on("input", function() {
+      // Get the current range value
+      var rangeValue = $(this).val();
+  
+      // Update the label text with the range value
+      $("#customRange1").prev("label").text(rangeValue);
+    });
+  });

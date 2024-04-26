@@ -101,13 +101,13 @@
                         <div class="settings-section-style row">
                             <div class="col-md-4 left-side-menu mr-2">
                                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu" style="padding: 1rem 0.4rem;">
-                                    <li class="nav-item d-flex align-items-center selected-setting-item">
+                                    <li class="nav-item d-flex align-items-center">
                                         <a href="#" class="nav-link px-0 ml-2">
                                             <i class="fs-4 bi-gear-fill align-middle"></i> 
                                             <span class="ms-1 d-none d-sm-inline align-middle">General</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item d-flex align-items-center">
+                                    <li class="nav-item d-flex align-items-center selected-setting-item">
                                         <a href="#" class="nav-link px-0 ml-2">
                                             <i class="fs-4 bi-stars align-middle"></i> 
                                             <span class="ms-1 d-none d-sm-inline align-middle">Model</span>
@@ -151,22 +151,55 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-md-7 right-side-menu">
-                             <p class="h4 fon-weight-bold">General</p>
-                             <hr style="border-color: #cacaca;"/>
-                             <div>
-                                <p class="p-0 m-0 text-secondary ">Chatbot ID</p>
-                                <p class="p-0 m-0 d-flex align-items-center font-weight-bold">IbAMdTqybv4zoVajcpbSI <span class="material-symbols-outlined ml-2 copy-btn">file_copy</span></p>
-                            </div>
-                            <div class="mt-3">
-                                <p class="p-0 m-0 text-secondary ">Number of Characters</p>
-                                <p class="p-0 m-0 d-flex align-items-center font-weight-bold">2,546</p>
-                            </div>
-                            <div class="mt-3">
-                                <p class="p-0 m-0 text-secondary ">Name</p>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" value="analysis.docx">
-                            </div>
-                            <button type="button" class="btn btn-dark float-right mt-4 px-3 py-2">Save</button>
+                            <div class="col-md-7">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <p class="h4 p-0 m-0">Training</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <p class="p-0 m-0 text-secondary ">Last trained at</p>
+                                            <p class="p-0 m-0 d-flex align-items-center font-weight-bold">April 25, 2024 at 05:57 PM</p>
+                                        </div>
+                                        <button type="button" class="btn btn-dark float-right px-3 py-2">Save</button>
+                                    </div>
+                                  </div>
+                                  <div class="card mt-2">
+                                    <div class="card-header">
+                                        <p class="h4 p-0 m-0">Model</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <p class="p-0 m-0 text-secondary ">Instructions</p>
+                                            <button type="button" class="btn btn-light float-right px-3 py-2 mb-1">Reset</button>
+                                            <div class="form-group">
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">I want you to act as a support agent. Your name is "AI Assistant". You will provide me with answers from the given info. If the answer is not included, say exactly "Hmm, I am not sure." and stop after that. Never break character.</textarea>
+                                                <label class="settings-label-style mt-1" for="exampleFormControlTextarea1">The instructions allows you to customize your chatbot's personality and style. Please make sure to experiment with the instructions by making it very specific to your data and use case.</label>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <p class="p-0 m-0 text-secondary ">Model <span class="badge badge-primary">gpt-4-turbo is now available</span></p>
+                                            <div class="dropdown">
+                                                <select class="dropdown-toggle form-select" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <option value="gpt-3.5-turbo" selected>gpt-3.5-turbo</option>
+                                                  <option value="gpt-4-turbo" disabled>gpt-4-turbo</option>
+                                                  <option value="gpt-4" disabled>gpt-4</option>
+                                                </select>
+                                                <label class="settings-label-style mt-1" for="exampleFormControlTextarea1">gpt-4 and gpt-4-turbo are much better at following the instructions and not hallucinating, but they're slower and more expensive than gpt-3.5-turbo (1 message using gpt-3.5-turbo costs 1 message credit. 1 message using gpt-4-turbo costs 10 message credits. 1 message using gpt-4 costs 20 message credits)</label>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <p class="p-0 m-0 text-secondary ">Temperature</p>
+                                            <label for="customRange1" class="form-label">0</label>
+                                            <input type="range" class="form-range" min="0" max="1" step="0.1" id="customRange1">
+                                            <div class="d-flex justify-content-between mt-0">
+                                                <label class="form-label">Reserved</label>
+                                                <label class="form-label">Creative</label>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-dark float-right px-3 py-2">Save</button>
+                                    </div>
+                                  </div>
                             </div>
                           
                         </div>
