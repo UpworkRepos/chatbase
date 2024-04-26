@@ -188,10 +188,10 @@
                                                 <button>+ ADD</button>
                                             </li>
                                             <li>
-                                                <a href="#">Document <span class="sidebar-menu-badge blue">5</span></a>
+                                                <a onclick="toggleDiv(1)" >Document <span class="sidebar-menu-badge blue">5</span></a>
                                             </li>
                                             <li>
-                                                <a href="#">URL <span class="sidebar-menu-badge green">5</span></a>
+                                                <a onclick="toggleDiv(2)">URL <span class="sidebar-menu-badge green">5</span></a>
                                             </li>
                                             <li>
                                                 <a href="#">Text <span class="sidebar-menu-badge red">5</span></a>
@@ -230,6 +230,70 @@
                                         </div>
         
                                         <div class="col-12 p-5">
+                                            <div id="div1" class="file-container mb-5">
+                                                <div class="file-header d-flex flex-column align-items-center">
+                                                    <h3 class="file-title">Add Multiple files</h3>
+                                                    <p>upload multiple new files to your source</p>
+                                                </div>
+                                                <div class="file-content">
+                                                    <p class="" style="color: black;">Multiple file upload</p>
+                                                    <div class="file-drop-area">
+                                                        <!-- <input class="file-input" accept="text/html,.pdf,.doc,.docx,.txt" multiple="" type="file" name="file"> -->
+                                                        <div class="file-upload-area">
+                                                            <!-- <input type="file" /> -->
+                                                            <!-- <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                                                <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l4.5 4.5a.75.75 0 01-1.06 1.06l-3.22-3.22V16.5a.75.75 0 01-1.5 0V4.81L8.03 8.03a.75.75 0 01-1.06-1.06l4.5-4.5zM3 15.75a.75.75 0 01.75.75v2.25a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V16.5a.75.75 0 011.5 0v2.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V16.5a.75.75 0 01.75-.75z" clip-rule="evenodd"></path>
+                                                            </svg> -->
+                                                            <div class="file-upload-text">
+                                                                <p style="color: black;">Drop files here or click to upload</p>
+                                                                <span style="color: black;" class="file-help-text">Supported File Types: .pdf, .doc, .docx, .txt</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center align-items-center mt-3">
+                                                        <button type="button" class="btn btn-light cancel-btn-style mr-2" onclick="toggleDiv(1)">Cancel</button>
+                                                        <button type="button" class="btn btn-primary submit-btn-style" onclick="toggleDiv(2)">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="div2" class="container-third hidden mb-5">
+                                                <div class="header-third back-clr">
+                                                    <h3>Website</h3>
+                                                </div>
+                                                <div class="content-third">
+                                                    <div class="crawl-section-third">
+                                                        <div>
+                                                            <label for="website">Add new url website</label>
+                                                            <div class="input-section-third">
+                                                                <input placeholder="" type="text" value="" name="website" class="input-80">
+                                                                <button class="button-20">Submit Url</button>
+                                                            </div>
+                                                            <div class="description-third p-0 m-0">
+                                                                Enter one or more url per line
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="input-section-third">
+                                                                <input placeholder="" type="text" value="" name="website" class="input-80">
+                                                                <button class="button-20">Crawl Url</button>
+                                                            </div>
+                                                            <div class="description-third p-0 m-0">
+                                                                Enter one URL to crawl all pages starting with <span class="url-placeholder">URL</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="input-section-third">
+                                                                <input placeholder="" type="text" value="" name="website" class="input-80">
+                                                                <button class="button-20">Submit Sitemap</button>
+                                                            </div>
+                                                            <div class="description-third p-0 m-0">
+                                                                Enter one sitemap URL to get all pages
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
                                             <table class="table">
                                                 <thead>
                                                     <tr>
@@ -261,15 +325,13 @@
     <script src="assets/js/dashboard.js"></script> 
     <script>
         function toggleDiv(divNumber) {
-            for (let i = 1; i <= 5; i++) {
+            console.log('divNumber ::: ',divNumber)
+            for (let i = 1; i <= 2; i++) {
                 document.getElementById('div' + i).classList.add('hidden');
             }
             document.getElementById('div' + divNumber).classList.remove('hidden');
-            for (let i = 1; i <= 5; i++) {
-                document.getElementById('btn' + i).classList.remove('active');
-            }
-            document.getElementById('btn' + divNumber).classList.add('active');
         }
+    
     
         $(document).ready(function(){
             $('[data-toggle="popover"]').popover();
