@@ -282,34 +282,39 @@
                                             </div>
                                         </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
+                                <div class="col-12 col-sm-6 col-md-7">
                                     <!-- the first -->
                                     <div id="div1" class="file-container mb-5">
-                                        <div class="file-header back-clr">
-                                            <h3 class="file-title">Files</h3>
+                                        <div class="file-header d-flex flex-column align-items-center">
+                                            <h3 class="file-title">Add Multiple files</h3>
+                                            <p>upload multiple new files to your source</p>
                                         </div>
                                         <div class="file-content">
+                                            <p class="" style="color: black;">Multiple file upload</p>
                                             <div class="file-drop-area">
-                                                <input class="file-input" accept="text/html,.pdf,.doc,.docx,.txt" multiple=""
-                                                    type="file" name="file">
+                                                <!-- <input class="file-input" accept="text/html,.pdf,.doc,.docx,.txt" multiple=""
+                                                    type="file" name="file"> -->
                                                 <div class="file-upload-area">
                                                     <!-- <input type="file" /> -->
-                                                    <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                    <!-- <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                                         fill="currentColor" aria-hidden="true">
                                                         <path fill-rule="evenodd"
                                                             d="M11.47 2.47a.75.75 0 011.06 0l4.5 4.5a.75.75 0 01-1.06 1.06l-3.22-3.22V16.5a.75.75 0 01-1.5 0V4.81L8.03 8.03a.75.75 0 01-1.06-1.06l4.5-4.5zM3 15.75a.75.75 0 01.75.75v2.25a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V16.5a.75.75 0 011.5 0v2.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V16.5a.75.75 0 01.75-.75z"
                                                             clip-rule="evenodd"></path>
-                                                    </svg>
+                                                    </svg> -->
                                                     <div class="file-upload-text">
-                                                        <p>Drag & drop files here, or click to select files</p>
-                                                        <span class="file-help-text">Supported File Types: .pdf, .doc, .docx,
+                                                        <p style="color: black;">Drop files here or click to upload</p>
+                                                        <span  style="color: black;" class="file-help-text">Supported File Types: .pdf, .doc, .docx,
                                                             .txt</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <p class="file-input-help">If you are uploading a PDF, make sure you can select/highlight
-                                                the text.</p>
+                                            <div class="d-flex justify-content-center align-items-center mt-3">
+                                                <button type="button" class="btn btn-light cancel-btn-style mr-2">Cancel</button>
+                                                <button type="button" class="btn btn-primary submit-btn-style">Submit</button>
+                                            </div>
                                         </div>
+                                        
                                     </div>
                                     <!-- the second  -->
                                     <div id="div2" class="container-input-div hidden mb-5">
@@ -330,45 +335,37 @@
                                         </div>
                                         <div class="content-third">
                                             <div class="crawl-section-third">
-                                                <label for="website">Crawl</label>
-                                                <div class="input-section-third">
-                                                    <input placeholder="https://www.example.com" type="text" value="" name="website">
-                                                    <button>Fetch links</button>
+                                                <div>
+                                                    <label for="website">Add new url website</label>
+                                                    <div class="input-section-third">
+                                                        <input placeholder="" type="text" value="" name="website" class="input-80">
+                                                        <button class="button-20">Submit Url</button>
+                                                    </div>
+                                                    <div class="description-third p-0 m-0">
+                                                        Enter one or more url per line
+                                                    </div>
                                                 </div>
-                                                <div class="description-third">
-                                                    This will crawl all the links starting with the URL (not including files on the
-                                                    website).
+                                                <div>
+                                                    <div class="input-section-third">
+                                                        <input placeholder="" type="text" value="" name="website" class="input-80">
+                                                        <button class="button-20">Crawl Url</button>
+                                                    </div>
+                                                    <div class="description-third p-0 m-0">
+                                                        Enter one URL to crawl all pages starting with <span class="url-placeholder">URL</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="separator-third">
-                                                <hr>
-                                                <span>OR</span>
-                                                <hr>
-                                            </div>
-                                            <div class="sitemap-section-third">
-                                                <label for="sitemap">Submit Sitemap</label>
-                                                <div class="input-section-third">
-                                                    <input placeholder="https://www.example.com/sitemap.xml" type="text" value=""
-                                                        name="sitemap">
-                                                    <button>Load sitemap</button>
-                                                </div>
-                                            </div>
-                                            <div class="included-links-third">
-                                                <div class="section-header-third">
-                                                    <span>Included Links</span>
-                                                    <button type="button">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                            <path d="M5 12h14"></path>
-                                                            <path d="M12 5v14"></path>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                                <div class="links-list-third" dir="ltr">
+                                                <div>
+                                                    <div class="input-section-third">
+                                                        <input placeholder="" type="text" value="" name="website" class="input-80">
+                                                        <button class="button-20">Submit Sitemap</button>
+                                                    </div>
+                                                    <div class="description-third p-0 m-0">
+                                                        Enter one sitemap URL to get all pages
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                     </div>
                                     <!-- the forth -->
                                     <div id="div4" class="container-forth hidden mb-5">
