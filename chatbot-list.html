@@ -7,7 +7,7 @@
     <meta name="author" content="Asad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Chatbase | Dashboard</title>
+    <title>Chatbase | Chatbots</title>
 
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="apple-touch-icon" href="assets/images/favicon.png">
@@ -65,8 +65,7 @@
             </div>
         </div>
         <div class="wrapper">
-            <!-- Left side bar start's here -->
-            
+            <!-- Left side bar start's here -->            
             <nav id="sidebar" class="sidebar-inactive">
 
                 <ul class="sidebar-internal list-unstyled components ml-1">
@@ -83,6 +82,9 @@
                             <span class="material-symbols-outlined float-end">chevron_right</span>
                         </a>
                         <ul class="collapse list-unstyled" id="chatbotMenu">
+                            <li>
+                                <a class="text-decoration-none text-light submenus-style" href="chatbot-list.html">Chatbot List</a>
+                            </li>
                             <li>
                                 <a class="text-decoration-none text-light submenus-style" href="sources.html">Create Chatbot</a>
                             </li>
@@ -142,29 +144,29 @@
             
             <!-- Page Content  -->
             <div id="content">
-                <div class="container">
-                    <div class="mt-5 row d-flex justify-content-center">
-                            <div class="card p-2 m-2 col-md-3 col-sm-12">
-                                <span class="material-symbols-outlined float-right align-self-end invisible">more_vert</span>
-                                <div class="card d-flex justify-content-center align-items-center outer-card">
-                                    <span class="material-symbols-outlined inner-card">add</span>
-                                    <a class="font-weight-bold" href="sources.html">Create Chatbot</a>
-                                </div>
-                              </div>
-                            <div class="card p-2 m-2 col-md-3 col-sm-12">
-                                <span class="material-symbols-outlined float-right align-self-end">more_vert</span>
-                                <div class="card d-flex justify-content-center align-items-center outer-card">
-                                    <img src="assets/images/dashboard/aibot.svg" alt="home icon" />
-                                    <p>Gagandeep Singh</p>
-                              </div>
-                              </div>
-                              <div class="card p-2 m-2 col-md-3 col-sm-12">
-                                <span class="material-symbols-outlined float-right align-self-end">more_vert</span>
-                                <div class="card d-flex justify-content-center align-items-center outer-card">
-                                    <img src="assets/images/dashboard/aibot.svg" alt="home icon" />
-                                    <p>Amazon</p>
-                              </div>
-                              </div>
+                <div class="container-fluid dashboard-cards">
+                    <div class="mt-5 mx-5">
+                        <div class="card p-2 m-4 col-md-3 col-sm-12">
+                            <span class="material-symbols-outlined float-right align-self-end invisible">more_vert</span>
+                            <div class="card d-flex justify-content-center align-items-center outer-card">
+                                <a class="material-symbols-outlined inner-card card-middle-item" href="sources.html">add</a>
+                                <a class="font-weight-bold" href="sources.html">Create Chatbot</a>
+                            </div>
+                            </div>
+                        <div class="card p-2 m-4 col-md-3 col-sm-12">
+                            <span class="material-symbols-outlined float-right align-self-end">more_vert</span>
+                            <div class="card d-flex justify-content-center align-items-center outer-card">
+                                <img src="assets/images/dashboard/aibot.svg" alt="home icon" class="card-middle-item" />
+                                <p>Gagandeep Singh</p>
+                            </div>
+                            </div>
+                            <div class="card p-2 m-4 col-md-3 col-sm-12">
+                            <span class="material-symbols-outlined float-right align-self-end">more_vert</span>
+                            <div class="card d-flex justify-content-center align-items-center outer-card">
+                                <img src="assets/images/dashboard/aibot.svg" alt="home icon" class="card-middle-item" />
+                                <p>Amazon</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
