@@ -1397,3 +1397,61 @@ input#flexSwitchCheckDefault {
 .user-online.inactive{
     background-color: gray;
 }
+.create-chatbot-files-outer{
+    border: 1px solid #cacaca;
+    border-radius: 8px;
+}
+
+.create-chatbot-files-outer ul{
+    list-style: none;
+}
+
+.create-chatbot-files-outer ul li button{
+    background-color: #4285F4;
+    border: 0 none;
+    border-radius: 4px;
+    padding:6px;
+    width: 100%;
+    color: #FFF;
+    margin: auto;
+}
+.create-chatbot-files-outer ul li{
+    margin-bottom: 8px;
+}
+.create-chatbot-files-outer ul li a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+}
+.create-chatbot-files-outer ul li a span{
+    float: right;
+    border-radius: 50%;
+    padding: 4px 8px;
+    background-color: #D9D9D9;
+    font-size: 13px;
+    color: #000;
+}
+.create-chatbot-files-outer ul li a span.green{
+    background-color: rgb(192, 238, 192);
+    color: green;
+}
+.create-chatbot-files-outer ul li a span.red{
+    background-color: rgb(238, 192, 192);
+    color: rgb(128, 0, 0);
+}
+.create-chatbot-files-outer ul li a span.yellow{
+    background-color: rgb(233, 238, 192);
+    color: rgb(124, 128, 0);
+}
+.create-chatbot-files-outer ul li a span.blue{
+    background-color: rgb(200, 192, 238);
+    color: rgb(19, 0, 128);
+}
+.create-chatbot-files-outer .left-area{
+    border-right: 1px solid #cacaca;
+}
+.right-side-top{
+    border-bottom: solid 1px #000;
+}
