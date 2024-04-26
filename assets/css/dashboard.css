@@ -1252,3 +1252,10 @@ p {
     display: flex; /* Display children as flex items */
     align-items: center; /* Align children vertically */
 }
+
+.img-height{
+    height:2.3rem
+}
+.blocked-div{
+    cursor: not-allowed;
+}
