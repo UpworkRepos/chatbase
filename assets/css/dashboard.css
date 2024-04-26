@@ -140,6 +140,7 @@ a.submenus-style {
 .search-bar-top input#form1{
     border-radius: 0 4px 4px 0;
     border:0 none;
+    font-size: 13px;
 }
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
