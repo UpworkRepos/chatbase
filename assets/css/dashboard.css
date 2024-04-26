@@ -245,8 +245,9 @@ a{
 }
 
 a.nav-link.active.text-decoration-none.font-weight-bold {
-    background: #b9d8cc;
+    background: #2A3A81;
     border-radius: 5px;
+    color: #fff !important;
 }
 ul.nav.justify-content-center.mt-4.p-0.mb-0 {
     border: 1px solid #cacaca;
@@ -1459,10 +1460,12 @@ input#flexSwitchCheckDefault {
 .right-side-top{
     border-bottom: 1px solid #cacaca;
 }
-.hidden {
-    display: none;
+.chatboat-searchbar button{
+    border:1px solid #ced4da;
+    border-right:0 none;
 }
-
-.active {
-    background-color: lightblue;
+.chatboat-searchbar input{
+    border-left: 0 none;
+    box-shadow:none;
+    font-size: 13px;
 }
