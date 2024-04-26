@@ -36,3 +36,25 @@ $(document).ready(function() {
       $("#customRange1").prev("label").text(rangeValue);
     });
   });
+
+  // Leads.html jquey code: 
+  $(document).ready(function(){
+    $('#flexSwitchCheckDefault').change(function(){
+      if($(this).prop('checked')){
+        $('#inputForm').show();
+      } else{
+        $('#inputForm').hide();
+      }
+    });
+  });
+
+  $(document).ready(function(){
+    $('.toggle-switch').change(function(){
+      var inputFormId = $(this).attr('id').replace('Switch', 'InputForm');
+      if($(this).prop('checked')){
+        $('#' + inputFormId).show();
+      } else{
+        $('#' + inputFormId).hide();
+      }
+    });
+  });
