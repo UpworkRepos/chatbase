@@ -1459,3 +1459,10 @@ input#flexSwitchCheckDefault {
 .right-side-top{
     border-bottom: 1px solid #cacaca;
 }
+.hidden {
+    display: none;
+}
+
+.active {
+    background-color: lightblue;
+}
