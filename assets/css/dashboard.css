@@ -1422,6 +1422,7 @@ input#flexSwitchCheckDefault {
 }
 .create-chatbot-files-outer ul li{
     margin-bottom: 8px;
+    cursor: pointer;
 }
 .create-chatbot-files-outer ul li a{
     color: #000;

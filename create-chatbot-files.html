@@ -185,13 +185,13 @@
                                     <div class="col-2 p-5 left-area">
                                         <ul>
                                             <li class="mb-5">
-                                                <button>+ ADD</button>
+                                                <button onclick="toggleDiv(2)">+ ADD</button>
                                             </li>
                                             <li>
-                                                <a onclick="toggleDiv(1)" >Document <span class="sidebar-menu-badge blue">5</span></a>
+                                                <a onclick="toggleDiv(2)" >Document <span class="sidebar-menu-badge blue">5</span></a>
                                             </li>
                                             <li>
-                                                <a onclick="toggleDiv(2)">URL <span class="sidebar-menu-badge green">5</span></a>
+                                                <a onclick="toggleDiv(3)">URL <span class="sidebar-menu-badge green">5</span></a>
                                             </li>
                                             <li>
                                                 <a href="#">Text <span class="sidebar-menu-badge red">5</span></a>
@@ -231,8 +231,21 @@
         
                                         <div class="col-12 p-5">
                                             <div id="div1" class="file-container mb-5">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th width="450"><input type="checkbox" class="mx-2"/>Name</th>
+                                                            <th>Last update</th>
+                                                            <th>Size</th>
+                                                            <th>Status</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                            <div id="div2" class="file-container hidden mb-5">
                                                 <div class="file-header d-flex flex-column align-items-center">
-                                                    <h3 class="file-title">Add Multiple files</h3>
+                                                    <h3 class="file-title">Upload Multiple files</h3>
                                                     <p>upload multiple new files to your source</p>
                                                 </div>
                                                 <div class="file-content">
@@ -256,7 +269,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div id="div2" class="container-third hidden mb-5">
+                                            <div id="div3" class="container-third hidden mb-5">
                                                 <div class="header-third back-clr">
                                                     <h3>Website</h3>
                                                 </div>
@@ -294,17 +307,7 @@
                                                 </div>
                                                 
                                             </div>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th width="450"><input type="checkbox" class="mx-2"/>Name</th>
-                                                        <th>Last update</th>
-                                                        <th>Size</th>
-                                                        <th>Status</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
-                                            </table>
+                                            
                                         </div>
                                     
                                     </div>
@@ -325,8 +328,7 @@
     <script src="assets/js/dashboard.js"></script> 
     <script>
         function toggleDiv(divNumber) {
-            console.log('divNumber ::: ',divNumber)
-            for (let i = 1; i <= 2; i++) {
+            for (let i = 1; i <= 3; i++) {
                 document.getElementById('div' + i).classList.add('hidden');
             }
             document.getElementById('div' + divNumber).classList.remove('hidden');
